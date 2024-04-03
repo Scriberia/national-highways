@@ -49,7 +49,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: auto;
+  // height: 100vh;
 }
 
 .swiper-button-disabled {
@@ -58,8 +59,10 @@ body {
 }
 
 .swiper {
-  width: auto;
-  height: 100vh;
+  width: 100%;
+  // width: auto;
+  // height: 100vh;
+  height: auto;
 }
 
 .swiper-slide {
@@ -90,11 +93,12 @@ body {
 }
 
 .swiper-wrapper {
+  // width: 99.9% !important;
   width: 100%;
   height: auto;
 }
 
 .swiper-slide {
-  width: 100%;
+  width: 100% !important;
   height: auto;
 }
