@@ -15,28 +15,22 @@
 </head>
 
 <body>
-
-  {{!-- {{>../../components/header/header.hbs}} --}}
-  {{!-- <div class="btns">
-    <button class="btnLeft">Left</button>
-    <button class="btnHome">Home</button>
-    <button class="btnRight">Right</button>
-  </div> --}}
-  <div class="animation">
-    <div class="animation-slider">
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide slide1"><img src="./assets/img/slide1.jpg" alt=""></div>
-          <div class="swiper-slide slide2"><img src="./assets/img/slide3.jpg" alt=""></div>
-          <div class="swiper-slide slide3"><img src="./assets/img/slide2.jpg" alt=""></div>
-          <div class="swiper-slide slide4"><img src="./assets/img/slide4.jpg" alt=""></div>
+  <dfrnc-animation>
+    <div class="animation">
+      <div class="animation-slider">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide1"><img src="./assets/img/slide1.jpg" alt=""></div>
+            <div class="swiper-slide slide2"><img src="./assets/img/slide3.jpg" alt=""></div>
+            <div class="swiper-slide slide3"><img src="./assets/img/slide2.jpg" alt=""></div>
+            <div class="swiper-slide slide4"><img src="./assets/img/slide4.jpg" alt=""></div>
+          </div>
         </div>
       </div>
+      {{>img/popupBtn.svg}}
+      {{>img/animation1.svg}}
     </div>
-    {{>img/popupBtn.svg}}
-    {{>img/animation1.svg}}
-  </div>
-
+  </dfrnc-animation>
 </body>
 
 </html>

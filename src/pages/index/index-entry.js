@@ -154,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             document.querySelector(elem.target).addEventListener("mouseenter", function () {
                 console.log(elem.target);
-                document.body.classList.add('active-links')
+                document.querySelector('dfrnc-animation').classList.add('active-links')
                 gsap.to(elem.icon, { opacity: 1 });
                 gsap.to(elem.target, { filter: 'contrast(1.8)' });
                 calloutElements
@@ -162,12 +162,12 @@ document.addEventListener("DOMContentLoaded", function () {
                     .forEach(otherElement => gsap.to(otherElement.icon, { opacity: 0 }));
             });
             document.querySelector(elem.target).addEventListener("mouseleave", function () {
-                document.body.classList.remove('active-links')
+                document.querySelector('dfrnc-animation').classList.remove('active-links')
                 calloutElements.forEach(otherElement => gsap.to(otherElement.icon, { opacity: 1 }));
                 gsap.to(elem.target, { filter: 'contrast(1)' });
             });
             document.querySelector(elem.icon).addEventListener("mouseenter", function () {
-                document.body.classList.add('active-links')
+                document.querySelector('dfrnc-animation').classList.add('active-links')
                 gsap.to(elem.icon, { opacity: 1 });
                 gsap.to(elem.target, { filter: 'contrast(1.8)' });
                 calloutElements
@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     .forEach(otherElement => gsap.to(otherElement.icon, { opacity: 0 }));
             });
             document.querySelector(elem.icon).addEventListener("mouseleave", function () {
-                document.body.classList.remove('active-links')
+                document.querySelector('dfrnc-animation').classList.remove('active-links')
                 calloutElements.forEach(otherElement => gsap.to(otherElement.icon, { opacity: 1 }));
                 gsap.to(elem.target, { filter: 'contrast(1)' });
 
@@ -270,17 +270,17 @@ document.addEventListener("DOMContentLoaded", function () {
             })
             document.querySelector(elem.target).addEventListener("mouseenter", function () {
                 // console.log(elem.target);
-                document.body.classList.add('active-links')
+                document.querySelector('dfrnc-animation').classList.add('active-links')
             });
             document.querySelector(elem.target).addEventListener("mouseleave", function () {
-                document.body.classList.remove('active-links')
+                document.querySelector('dfrnc-animation').classList.remove('active-links')
             });
             document.querySelector(elem.btn).addEventListener("mouseenter", function () {
                 // console.log(elem.btn);
-                document.body.classList.add('active-links')
+                document.querySelector('dfrnc-animation').classList.add('active-links')
             });
             document.querySelector(elem.btn).addEventListener("mouseleave", function () {
-                document.body.classList.remove('active-links')
+                document.querySelector('dfrnc-animation').classList.remove('active-links')
             });
         });
         calloutSubElements5.forEach(function (elem, index, arr) {
@@ -296,16 +296,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             })
             document.querySelector(elem.target).addEventListener("mouseenter", function () {
-                document.body.classList.add('active-links')
+                document.querySelector('dfrnc-animation').classList.add('active-links')
             });
             document.querySelector(elem.target).addEventListener("mouseleave", function () {
-                document.body.classList.remove('active-links')
+                document.querySelector('dfrnc-animation').classList.remove('active-links')
             });
             document.querySelector(elem.btn).addEventListener("mouseenter", function () {
-                document.body.classList.add('active-links')
+                document.querySelector('dfrnc-animation').classList.add('active-links')
             });
             document.querySelector(elem.btn).addEventListener("mouseleave", function () {
-                document.body.classList.remove('active-links')
+                document.querySelector('dfrnc-animation').classList.remove('active-links')
             });
         });
 
